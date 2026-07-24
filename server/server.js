@@ -1,4 +1,4 @@
-// Sketch Together relay server.
+// WeSketch relay server.
 // Run with: node server.js   (listens on ws://localhost:8787)
 
 const http = require('http');
@@ -16,7 +16,7 @@ try {
 
 const httpServer = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end(`Sketch Together server is running (${release})\n`);
+  res.end(`WeSketch server is running (${release})\n`);
 });
 
 const wss = new WebSocketServer({ server: httpServer });
@@ -146,5 +146,5 @@ wss.on('connection', (ws) => {
 });
 
 httpServer.listen(PORT, HOST, () => {
-  console.log(`Sketch Together server listening on ws://${HOST}:${PORT}`);
+  console.log(`WeSketch server listening on ws://${HOST}:${PORT}`);
 });

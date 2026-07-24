@@ -1,8 +1,8 @@
-# Sketch Together
+# WeSketch
 
 Draw and sketch on top of any webpage — and invite friends to draw with you in real time.
 
-- **Chrome extension** (`extension/`): transparent canvas overlay + floating toolbar (pen, eraser, color, brush size, clear) + popup to create/join rooms.
+- **Chrome extension** (`extension/`): transparent canvas overlay + floating toolbar (pen, shapes, eraser, color, brush size) + popup to create/join rooms.
 - **Server** (`server/`): tiny Node.js WebSocket relay that syncs strokes between everyone in a room.
 
 ## How it works
@@ -27,7 +27,8 @@ node server.js
 ```
 
 It listens on `ws://localhost:8787` — put that address in the popup's
-"Server address" field. See `infra/DEPLOY.md` for the production deploy.
+"Server address" field (under **Advanced**). See `infra/DEPLOY.md` for the
+production deploy.
 
 </details>
 
@@ -37,7 +38,7 @@ It listens on `ws://localhost:8787` — put that address in the popup's
 2. Turn on **Developer mode** (top right)
 3. Click **Load unpacked** and select the `extension` folder
 
-### 3. Draw!
+### Draw!
 
 - Open any normal website (http/https), click the extension icon, click **Create room on this page**.
 - A toolbar appears in the top-right of the page. One tool is always selected —

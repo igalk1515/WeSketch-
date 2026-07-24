@@ -1,5 +1,5 @@
 [Unit]
-Description=Sketch Together WebSocket relay
+Description=WeSketch WebSocket relay
 After=network.target
 
 [Service]
